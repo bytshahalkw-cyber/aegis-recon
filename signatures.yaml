@@ -1,0 +1,16 @@
+- name: "Exposed .env Configuration File"
+  paths: ["/.env", "/config/.env", "/.env.local"]
+  match_status: [200]
+  match_regex: "(?i)^(DB_PASSWORD|SECRET_KEY|API_KEY|DATABASE_URL)="
+  severity: "HIGH"
+
+- name: "Git Repository Exposure"
+  paths: ["/.git/config", "/.git/HEAD"]
+  match_status: [200]
+  match_regex: "(\\[core\\]|ref: refs/heads/)"
+  severity: "HIGH"
+
+- name: "Backup or Archive File Found"
+  paths: ["/backup.zip", "/backup.tar.gz", "/db.sql", "/dump.sql"]
+  match_status: [200]
+  severity: "MEDIUM"

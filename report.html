@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Aegis-Recon Security Report - Scan #3</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 20px; background: #0f172a; color: #e2e8f0; }
+        .container { max-width: 800px; margin: auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        h1 { color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 10px; margin-top: 0; }
+        h2 { color: #f8fafc; margin-top: 25px; }
+        .meta { margin-bottom: 25px; padding: 15px; background: #0f172a; border-radius: 8px; border-right: 4px solid #38bdf8; }
+        .meta p { margin: 5px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { padding: 12px; border: 1px solid #334155; text-align: right; }
+        th { background-color: #334155; color: #f8fafc; }
+        tr:nth-child(even) { background-color: #1a2332; }
+        .footer { margin-top: 30px; text-align: center; font-size: 0.85em; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Aegis-Recon Security Report</h1>
+        <div class="meta">
+            <p><strong>معرف الفحص (Scan ID):</strong> #3</p>
+            <p><strong>الهدف المستهدف (Target):</strong> https://example.com</p>
+            <p><strong>تاريخ ووقت الفحص:</strong> 2026-09-16 14:40:57.978435</p>
+            <p><strong>حالة الفحص:</strong> SUCCESS</p>
+        </div>
+        <h2>📋 تفاصيل الاكتشافات الأمنية</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>الوحدة (Module)</th>
+                    <th>مستوى الخطورة</th>
+                    <th>الوصف</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td>headers</td>
+            <td><span style="color: #e67e22; font-weight: bold;">MEDIUM</span></td>
+            <td>Missing security header: content-security-policy</td>
+        </tr>
+        
+        <tr>
+            <td>headers</td>
+            <td><span style="color: #e67e22; font-weight: bold;">MEDIUM</span></td>
+            <td>Missing security header: x-frame-options</td>
+        </tr>
+        
+        <tr>
+            <td>headers</td>
+            <td><span style="color: #e67e22; font-weight: bold;">MEDIUM</span></td>
+            <td>Missing security header: x-content-type-options</td>
+        </tr>
+        
+        <tr>
+            <td>headers</td>
+            <td><span style="color: #e67e22; font-weight: bold;">MEDIUM</span></td>
+            <td>Missing security header: strict-transport-security</td>
+        </tr>
+        
+        <tr>
+            <td>ports</td>
+            <td><span style="color: #e67e22; font-weight: bold;">MEDIUM</span></td>
+            <td>Port 80 is OPEN</td>
+        </tr>
+        
+        <tr>
+            <td>ports</td>
+            <td><span style="color: #e67e22; font-weight: bold;">MEDIUM</span></td>
+            <td>Port 443 is OPEN</td>
+        </tr>
+        
+        <tr>
+            <td>ports</td>
+            <td><span style="color: #e67e22; font-weight: bold;">MEDIUM</span></td>
+            <td>Port 8080 is OPEN</td>
+        </tr>
+        
+            </tbody>
+        </table>
+        <div class="footer">
+            Generated automatically by Aegis-Recon Framework on Termux
+        </div>
+    </div>
+</body>
+</html>

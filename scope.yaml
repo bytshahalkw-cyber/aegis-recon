@@ -1,0 +1,4 @@
+allow:
+  - "example.com"
+  - "*.example.com"
+  - "*"

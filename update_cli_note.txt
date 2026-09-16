@@ -1,0 +1,3 @@
+# تم تحديث مفسر الوحدات مسبقاً في الفحص، وكل ما نحتاجه هو إضافة الشرط التالي داخل قسم تشغيل الوحدات في aegis/cli.py:
+# elif m == "signatures":
+#     mod_instances.append(SignaturesModule())
